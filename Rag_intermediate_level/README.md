@@ -23,4 +23,14 @@ A Streamlit app that lets users upload a PDF or text document and ask questions 
 - **Local embeddings, hosted LLM:** embeddings run locally (fast, free, no API needed) while the final answer generation uses a hosted LLM (Groq) for stronger reasoning.
 
 ## Setup
-1.
+1. Install dependencies:
+
+pip install -r requirements.txt
+
+2. Create a `.env` file in this folder with your Groq API key:
+
+GROQ_API_KEY=your_key_here
+
+3. Run the app:
+
+python -m streamlit run app.py
