@@ -35,8 +35,7 @@ Notes:
         return response.choices[0].message.content
 
     except Exception as e:
-        print(f"Error occurred: {e}")
-        return "Sorry, something went wrong while generating the summary. Please try again."
+        return f"DEBUG ERROR: {e}"
 
 
 def generate_quiz(user_notes):
@@ -72,8 +71,7 @@ Notes:
         return response.choices[0].message.content
 
     except Exception as e:
-        print(f"Error occurred: {e}")
-        return "Sorry, something went wrong while generating the quiz. Please try again."
+        return f"DEBUG ERROR: {e}"
 
 
 if __name__ == "__main__":
